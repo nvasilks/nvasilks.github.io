@@ -1,0 +1,137 @@
+.bg-light, .intro, .menu {
+    background-color: #3AAFA9 !important;
+    opacity: 0.99;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+#home > div > div.jumbotron.jumbotron-fluid > div > p {
+    color: #17252A;
+}
+
+h3 {
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Biryani', sans-serif;
+}
+
+h5 {
+    color: #3AAFA9;
+    font-size: 1rem;
+}
+
+nav {
+    font-weight: 200;
+}
+
+#navbarNavAltMarkup > div > .active {
+    color: #FEFFFF !important;
+    font-weight: 600;
+}
+
+#navbarNavAltMarkup > div > .nav-item {
+    color: #DEF2F1 
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+.jumbotron {
+    background-color: #3AAFA9;
+    padding: 6rem 2rem !important;
+}
+
+.main-page {
+    background-color: #3AAFA9;
+}
+
+.display-5 {
+    color: #FEFFFF;
+    font-family: 'Biryani', sans-serif;
+    font-weight: 800;
+}
+
+.lead{
+    font-weight: 400;
+}
+
+.hero-image {
+    width: 100vw;
+
+}
+
+#about {
+    background-color: #17252A;
+    color: #FEFFFF;
+}
+
+.about-content {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+#skills {
+    text-align: center;
+    margin-top: -8rem;
+}
+
+.empty-space {
+    background-color: #17252A;
+    height: 7rem;
+}
+
+.row {
+    background-color: #FEFFFF;
+    border: 1px solid #DEF2F1;
+    border-radius: 10px;
+}
+
+#skills > div > div > div:nth-child(2) {
+    border-top: 1px solid #DEF2F1;
+    border-bottom: 1px solid #DEF2F1;
+}
+
+.fas {
+font-size: 4rem;
+margin: 2rem;
+color: #3AAFA9
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+@media only screen and (min-width: 320px) {
+    .hero-image {
+        width: 95vw;
+    
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .hero-image {
+        width: 60vw;
+    
+    }
+    #about > div > p {
+        max-width: 40vw;
+    }
+  }
+
+
+  @media only screen and (min-width: 991px) {
+    #skills > div > div > div:nth-child(2) {
+        border-left: 1px solid #DEF2F1;
+        border-right: 1px solid #DEF2F1;
+    }
+}
+  
