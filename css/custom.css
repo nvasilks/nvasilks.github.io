@@ -105,9 +105,91 @@ margin: 2rem;
 color: #3AAFA9
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+.co-info {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"]   {
+    color: #17252A;
+    background-color: #DEF2F1;
+    width:  100%;
+    height: 50px;
+    border-width: 0;
+    border-radius: 4px;
+    margin: 8px 0 17px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input:focus,
+textarea:focus,
+button:focus
+{
+    border: 2px solid #17252A;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+textarea {
+    color: #17252A;
+    background-color: #DEF2F1;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    border-radius: 4px;
+    margin-bottom: 17px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input[type="submit"]{
+    color: #FEFFFF;
+        background-color: #217A77;
+        width: 100%;
+        height: 60px;
+        border-width: 0;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    input[placeholder="Required"]::placeholder {
+        font-style: italic;
+        text-align: right;
+        color: #217A77;
+        font-weight: 400;
+        font-size: 0.9rem;
+        padding-right: 2px;
+      }
+
+.nav-link, input[type="submit"] {
+    text-transform: uppercase;
+}
+
+#my-form-status{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #FEFFFF;
+        background-color: #17252A;
+        width: 100%;
+        height: 60px;
+        border-width: 0;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
 
 @media only screen and (min-width: 320px) {
     .hero-image {
