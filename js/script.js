@@ -40,6 +40,7 @@ window.addEventListener("DOMContentLoaded", function() {
       button.style = "display: none";
       status.style = "display: flex";
       status.innerHTML = "Thank you, your message has been sent!";
+      dataLayer.push({'event': 'form_submitted'});
     }
 
     function error() {
