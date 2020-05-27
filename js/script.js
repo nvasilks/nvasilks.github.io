@@ -54,7 +54,6 @@ window.addEventListener("DOMContentLoaded", function() {
       var data = new FormData(form);
       ajax(form.method, form.action, data, success, error);
     });
-  });
   
   // helper function for sending an AJAX request
 
@@ -72,3 +71,11 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     xhr.send(data);
   }
+
+  // mouseleave
+
+  $(document).one('mouseleave', function() {
+    $('#myModal').modal('show');
+  });
+
+});
