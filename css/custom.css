@@ -27,7 +27,7 @@ h5 {
     font-size: 1rem;
 }
 
-#contact > h2 {
+#contact > h2, #contact > p {   
     color: #17252A;
 }
 
@@ -290,18 +290,6 @@ padding-bottom: 5rem;
         padding-top: 2rem
     }
 
-    .button {
-        display: block;
-        width: 115px;
-        height: 25px;
-        background: #4E9CAF;
-        padding: 10px;
-        text-align: center;
-        border-radius: 5px;
-        color: white;
-        font-weight: bold;
-    }
-
 @media only screen and (min-width: 320px) {
     .hero-image {
         width: 95vw;
@@ -317,9 +305,7 @@ padding-bottom: 5rem;
     #about > div > p {
         max-width: 40vw;
     }
-
   }
-
 
   @media only screen and (min-width: 991px) {
     #skills > div > div > div:nth-child(2) {
