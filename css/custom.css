@@ -242,7 +242,11 @@ input[type="submit"]{
       
       .text {
         color: white;
-        font-size: 20px;
+        font-size: 14px;
+      }
+
+      .text > p:nth-child(2) {
+          font-weight: 700;
       }
 
       .btn-project {
@@ -311,6 +315,8 @@ padding-bottom: 5rem;
     #skills > div > div > div:nth-child(2) {
         border-left: 1px solid #DEF2F1;
         border-right: 1px solid #DEF2F1;
+        border-top: 0;
+        border-bottom: 0;
     }
 
     div#contact {
