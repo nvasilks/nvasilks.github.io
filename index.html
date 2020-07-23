@@ -540,16 +540,6 @@ l-31 65 0 3025 0 3025 23 57 c26 63 101 152 167 198 40 27 118 55 180 63 17 2
   </section>
   <!-- Contact -->
 	
-	<!-- GET UA ID -->
-	
-	<script type=”text/javascript”> 
-    ga(function() { 
-      var tracker = ga.getAll()[0];
-      var trackingId = tracker.get('trackingId');
-    });
-</script>
-	
-	<!-- END GET UA ID -->
 	
 	<section>
 		<div id="contact" class="container">
@@ -569,7 +559,7 @@ l-31 65 0 3025 0 3025 23 57 c26 63 101 152 167 198 40 27 118 55 180 63 17 2
 				
 				<input type="hidden" id="GACLIENTID" name="GACLIENTID" value="">
     				<input type="hidden" id="GAUSERID" name="GAUSERID" value="">
-				<input type="hidden" id="GATRACKID" name="GATRACKID" value=trackingId>
+				<input type="hidden" id="GATRACKID" name="GATRACKID" value="">
 				
 				<!-- END CUSTOM TRACKING FIELDS -->
 				
@@ -589,6 +579,8 @@ l-31 65 0 3025 0 3025 23 57 c26 63 101 152 167 198 40 27 118 55 180 63 17 2
         document.getElementById('GACLIENTID').value = clientId;
         var userId = tracker.get('userId'); 
         document.getElementById('GAUSERID').value = userId; 
+	      var trackingId = tracker.get('trackingId'); 
+        document.getElementById('GATRACKID').value = trackingId; 
       });
     });
 </script>
