@@ -539,6 +539,18 @@ l-31 65 0 3025 0 3025 23 57 c26 63 101 152 167 198 40 27 118 55 180 63 17 2
 		</div>
   </section>
   <!-- Contact -->
+	
+	<!-- GET UA ID -->
+	
+	<script type=”text/javascript”> 
+    ga(function() { 
+      var tracker = ga.getAll()[0];
+      var trackingId = tracker.get('trackingId');
+    });
+</script>
+	
+	<!-- END GET UA ID -->
+	
 	<section>
 		<div id="contact" class="container">
 			<h2 class="display-5 text-center pt-5">Say Hello</h2>
@@ -552,10 +564,37 @@ l-31 65 0 3025 0 3025 23 57 c26 63 101 152 167 198 40 27 118 55 180 63 17 2
 					<label for="message">Message</label>
 					<textarea id="message" name="message" rows="10" cols="50"></textarea>
 				</div>
+				
+				<!-- CUSTOM TRACKING FIELDS -->
+				
+				<input type="hidden" id="GACLIENTID" name="GACLIENTID" value="">
+    				<input type="hidden" id="GAUSERID" name="GAUSERID" value="">
+				<input type="hidden" id="GATRACKID" name="GATRACKID" value=trackingID>
+				
+				<!-- END CUSTOM TRACKING FIELDS -->
+				
 				<input id="my-form-button" type="submit" value="Send">
 				<p id="my-form-status"></p>
 			</form>
 		</div>
+		
+		<!-- CUSTOM TRACKING FIELD VALUES -->
+		
+		<script type="text/javascript">
+    document.getElementById('FORM_ID').addEventListener(
+    'submit', function(event) {
+      ga(function() { 
+        var tracker = ga.getAll()[0];
+        var clientId = tracker.get('clientId');
+        document.getElementById('GACLIENTID').value = clientId;
+        var userId = tracker.get('userId'); 
+        document.getElementById('GAUSERID').value = userId; 
+      });
+    });
+</script>
+	
+	<!-- END CUSTOM TRACKING FIELD VALUES -->	
+		
   </section>
   <!-- Footer -->
 	<div class="container">
