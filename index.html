@@ -569,7 +569,7 @@ l-31 65 0 3025 0 3025 23 57 c26 63 101 152 167 198 40 27 118 55 180 63 17 2
 				
 				<input type="hidden" id="GACLIENTID" name="GACLIENTID" value="">
     				<input type="hidden" id="GAUSERID" name="GAUSERID" value="">
-				<input type="hidden" id="GATRACKID" name="GATRACKID" value=trackingID>
+				<input type="hidden" id="GATRACKID" name="GATRACKID" value=trackingId>
 				
 				<!-- END CUSTOM TRACKING FIELDS -->
 				
@@ -581,7 +581,7 @@ l-31 65 0 3025 0 3025 23 57 c26 63 101 152 167 198 40 27 118 55 180 63 17 2
 		<!-- CUSTOM TRACKING FIELD VALUES -->
 		
 		<script type="text/javascript">
-    document.getElementById('FORM_ID').addEventListener(
+    document.getElementById('my-form').addEventListener(
     'submit', function(event) {
       ga(function() { 
         var tracker = ga.getAll()[0];
