@@ -40,6 +40,19 @@
 	<noscript>
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTHG6Z9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
+	
+	<!-- FB InApp Alert -->
+	<script>
+ function isFacebookApp() {
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+    } 
+    if(isFacebookApp()){
+         // your action here if user using Facebook in-app browser
+        alert('Are you using Facebook Browser? To get better experience, try press [...] and Open the blog in Chrome or Safari. Thank you!');
+    }
+</script>
+	
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
